@@ -1,0 +1,465 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Fake_Generator_Website" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1234,1891" sap2010:WorkflowViewState.IdRef="Fake_Generator_Website_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:sn="clr-namespace:System.Net;assembly=System.Net.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Net</x:String>
+      <x:String>System.Numerics</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Net.Primitives</AssemblyReference>
+      <AssemblyReference>System.Net.HttpListener</AssemblyReference>
+      <AssemblyReference>System.Net.WebProxy</AssemblyReference>
+      <AssemblyReference>System.Net.NameResolution</AssemblyReference>
+      <AssemblyReference>System.Net.WebClient</AssemblyReference>
+      <AssemblyReference>System.Net.Requests</AssemblyReference>
+      <AssemblyReference>System.Net.ServicePoint</AssemblyReference>
+      <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Fake_Generator_Website" sap:VirtualizedContainerService.HintSize="612,1826" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_Result" />
+      <Variable x:TypeArguments="x:String" Name="FullName" />
+      <Variable x:TypeArguments="x:String" Name="Address" />
+      <Variable x:TypeArguments="x:String" Name="Birthday" />
+      <Variable x:TypeArguments="x:String" Name="Phone" />
+      <Variable x:TypeArguments="sn:NetworkCredential" Name="sec_Password" />
+      <Variable x:TypeArguments="x:String" Name="CountryCode" />
+      <Variable x:TypeArguments="x:String" Name="Company" />
+      <Variable x:TypeArguments="x:String" Name="Occupation" />
+      <Variable x:TypeArguments="x:String" Name="str_Password" />
+      <Variable x:TypeArguments="x:String" Name="Country" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="550,1738" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch.Try>
+        <Sequence DisplayName="Fake Generator Website" sap:VirtualizedContainerService.HintSize="512,1487" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="sd:DataTable" Name="dt_TestExcel" />
+            <Variable x:TypeArguments="x:String" Name="Gender" />
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: hide.me VPN" sap:VirtualizedContainerService.HintSize="450,797" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="IfNotOpen" ScopeGuid="cfc86189-72f3-47e0-a8ea-c6fcfb31f36e" Version="V2">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,466" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Enable VPN'" sap:VirtualizedContainerService.HintSize="354,197" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cfc86189-72f3-47e0-a8ea-c6fcfb31f36e" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="260, 400, 92, 24" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;ctrl automationid='btnProtection' /&gt;&lt;ctrl name='Enable VPN' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='btnProtection' /&gt;&lt;ctrl name='Enable VPN' role='text' automationid='' check:text='Enable VPN' /&gt;" Guid="a5dc5e96-9400-4f73-8f33-d1944398663e" InformativeScreenshot="64e43e2ae79decae7482a81f6d76aa76.png" ScopeSelectorArgument="&lt;wnd app='hide.me.exe' cls='HwndWrapper*' title='hide.me VPN' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="156, 389, 300, 46" ElementType="Button" FullSelectorArgument="&lt;ctrl automationid='btnProtection' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='btnProtection' role='push button' check:text='Enable VPN' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Connect to VPN'" sap:VirtualizedContainerService.HintSize="354,182" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cfc86189-72f3-47e0-a8ea-c6fcfb31f36e" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="61, 367, 116, 21" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;ctrl name='Connect to VPN' role='push button' /&gt;&lt;ctrl name='Connect to VPN' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Connect to VPN' role='push button' /&gt;&lt;ctrl name='Connect to VPN' role='text' automationid='' check:text='Connect to VPN' /&gt;" Guid="79474460-7d67-49f6-a13c-33862aa4d09e" InformativeScreenshot="f2bd421523952732099854b1b410edb7.png" ScopeSelectorArgument="&lt;wnd app='hide.me.exe' cls='HwndWrapper*' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="20, 355, 198, 45" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Connect to VPN' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Connect to VPN' role='push button' automationid='' check:text='Connect to VPN' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="690, 141, 611, 634" FilePath="C:\Program Files (x86)\hide.me VPN\hide.me.exe" IconBase64="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" InformativeScreenshot="07a217e4dd547c75c7ffea51cd9fd404.png" Selector="&lt;wnd app='hide.me.exe' cls='HwndWrapper*' title='hide.me VPN' /&gt;" Title="hide.me VPN" />
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
+          <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="450,173" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="EXCEL.EXE" />
+          <ui:ReadRange AddHeaders="True" DataTable="[dt_TestExcel]" DisplayName="Read Test Excel Sheet" sap:VirtualizedContainerService.HintSize="450,128" sap2010:WorkflowViewState.IdRef="ReadRange_1" Range="A7:B12" SheetName="Sheet1" WorkbookPath="C:\Users\yehia\Downloads\output\test.xlsx" />
+          <ui:BuildDataTable DataTable="[dt_Result]" DisplayName="Build Excel Sheet Of Data Generated" sap:VirtualizedContainerService.HintSize="450,100" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;ID&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Gender&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Country&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;First_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Last_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Birthday&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Address&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Phone&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Country_x0020_Code&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Company&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Occupation&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Password&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName /&gt;&#xA;&lt;/NewDataSet&gt;" />
+          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_TestExcel]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="450,65" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+            <ui:ForEachRow.Body>
+              <ActivityAction x:TypeArguments="sd:DataRow">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="699,3456" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Generate a Random Name - Fake Name Generator" sap:VirtualizedContainerService.HintSize="637,3371" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="f6b4f190-f272-47c5-8601-b1334dcc296c" Version="V2" WindowResize="Maximize">
+                    <uix:NApplicationCard.Body>
+                      <ActivityAction x:TypeArguments="x:Object">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="603,3131" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="541,3044" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:LogMessage DisplayName="Log Message - Choose to generate" sap:VirtualizedContainerService.HintSize="479,183" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Choosing Gender and Country to Generate &quot;+DateTime.Now.ToString]" />
+                            <ui:MultipleAssign DisplayName="Multiple Assign - Gender and Country" sap:VirtualizedContainerService.HintSize="479,187" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                              <ui:MultipleAssign.AssignOperations>
+                                <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[Gender]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow("Gender").ToString]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[Country]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow("Country").ToString]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                </scg:List>
+                              </ui:MultipleAssign.AssignOperations>
+                            </ui:MultipleAssign>
+                            <uix:NSelectItem DisplayName="Select Item 'Gender'" sap:VirtualizedContainerService.HintSize="479,197" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="[Gender]" ScopeIdentifier="f6b4f190-f272-47c5-8601-b1334dcc296c" Version="V3">
+                              <uix:NSelectItem.Items>
+                                <scg:List x:TypeArguments="x:String" Capacity="3">
+                                  <x:String>Random</x:String>
+                                  <x:String>Male</x:String>
+                                  <x:String>Female</x:String>
+                                </scg:List>
+                              </uix:NSelectItem.Items>
+                              <uix:NSelectItem.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/" DesignTimeRectangle="692, 393, 200, 25" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='gen' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='gen' tag='SELECT' aaname='Gender' /&gt;" Guid="09f6783c-1e7f-4f57-a2b0-b2fcaaa908b7" InformativeScreenshot="8a88e78b589c73bd0239ec264a225a39.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Fake*Generator*' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="632, 394, 51, 17" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' aaname='Gender' check:innerText='Gender' /&gt;" ImageBase64="" SearchSteps="FuzzySelector" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NSelectItem.Target>
+                            </uix:NSelectItem>
+                            <uix:NSelectItem DisplayName="Select Item 'Country'" sap:VirtualizedContainerService.HintSize="479,197" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="[Country]" ScopeIdentifier="f6b4f190-f272-47c5-8601-b1334dcc296c" Version="V3">
+                              <uix:NSelectItem.Items>
+                                <scg:List x:TypeArguments="x:String" Capacity="31">
+                                  <x:String>Australia</x:String>
+                                  <x:String>Austria</x:String>
+                                  <x:String>Belgium</x:String>
+                                  <x:String>Brazil</x:String>
+                                  <x:String>Canada</x:String>
+                                  <x:String>Cyprus (Anglicized)</x:String>
+                                  <x:String>Cyprus (Greek)</x:String>
+                                  <x:String>Czech Republic</x:String>
+                                  <x:String>Denmark</x:String>
+                                  <x:String>Estonia</x:String>
+                                  <x:String>Finland</x:String>
+                                  <x:String>France</x:String>
+                                  <x:String>Germany</x:String>
+                                  <x:String>Greenland</x:String>
+                                  <x:String>Hungary</x:String>
+                                  <x:String>Iceland</x:String>
+                                  <x:String>Italy</x:String>
+                                  <x:String>Netherlands</x:String>
+                                  <x:String>New Zealand</x:String>
+                                  <x:String>Norway</x:String>
+                                  <x:String>Poland</x:String>
+                                  <x:String>Portugal</x:String>
+                                  <x:String>Slovenia</x:String>
+                                  <x:String>South Africa</x:String>
+                                  <x:String>Spain</x:String>
+                                  <x:String>Sweden</x:String>
+                                  <x:String>Switzerland</x:String>
+                                  <x:String>Tunisia</x:String>
+                                  <x:String>United Kingdom</x:String>
+                                  <x:String>United States</x:String>
+                                  <x:String>Uruguay</x:String>
+                                </scg:List>
+                              </uix:NSelectItem.Items>
+                              <uix:NSelectItem.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/" DesignTimeRectangle="692, 459, 200, 25" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='c' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='c' tag='SELECT' aaname='Country' /&gt;" Guid="280cd47e-2125-4fa1-97c8-1be29bf83bfd" ImageBase64="" InformativeScreenshot="9120ff497f5c535abff22df204ae94d5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Fake*Generator*' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="627, 460, 56, 17" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Country' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Country' tag='LABEL' check:innerText='Country' /&gt;" ImageBase64="" SearchSteps="FuzzySelector" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NSelectItem.Target>
+                            </uix:NSelectItem>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="3" DisplayName="Click 'Generate'" sap:VirtualizedContainerService.HintSize="479,197" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f6b4f190-f272-47c5-8601-b1334dcc296c" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/" DesignTimeRectangle="692, 492, 71, 23" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='genbtn' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='genbtn' tag='INPUT' type='submit' class='button red' aaname='Generate' check:text='Generate' /&gt;" Guid="2f657929-14bd-4ab8-9749-c8bd1208f6fe" InformativeScreenshot="68ddcaca906516a3144269467a9093f1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Fake*Generator*' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <ui:LogMessage DisplayName="Log Message - Extracting Data" sap:VirtualizedContainerService.HintSize="479,183" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Extracting Data From Generated Name &quot;+DateTime.Now.ToString]" />
+                            <uix:NGetText DisplayName="Get FullName" sap:VirtualizedContainerService.HintSize="479,197" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="f6b4f190-f272-47c5-8601-b1334dcc296c" TextString="[FullName]" Version="V3">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/gen-male-us-us.php" DesignTimeRectangle="788, 569, 540, 19" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H3' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H3' /&gt;" Guid="092f92c5-ce0e-4af8-9994-6bc2d6a995d5" ImageBase64="" InformativeScreenshot="c599bf0c7253a73bf11021c5a7917095.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Fake*Generator*' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="628, 569, 121, 137" ElementType="Icon" FullSelectorArgument="&lt;webctrl parentid='details' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='details' tag='IMG' aaname='Male' /&gt;" ImageBase64="" SearchSteps="FuzzySelector" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NGetText.Target>
+                            </uix:NGetText>
+                            <uix:NGetText DisplayName="Get Address" sap:VirtualizedContainerService.HintSize="479,197" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="f6b4f190-f272-47c5-8601-b1334dcc296c" TextString="[Address]" Version="V3">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/gen-female-us-nz.php" DesignTimeRectangle="788, 578, 540, 54" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl class='adr' parentid='details' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='adr' parentid='details' tag='DIV' type='' /&gt;" Guid="8f305202-bb8e-4aaf-a96a-785869873b1c" InformativeScreenshot="62b46520b0d85f1e725c042272e1c826.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Generate a Random Name - Female, American, New Zealand - Fake Name Generator' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="628, 559, 121, 137" ElementType="Icon" FullSelectorArgument="&lt;webctrl parentid='details' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='details' tag='IMG' type='' class='' aaname='Female' /&gt;" SearchSteps="FuzzySelector" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NGetText.Target>
+                            </uix:NGetText>
+                            <uix:NGetText DisplayName="Get Birthday" sap:VirtualizedContainerService.HintSize="479,197" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="f6b4f190-f272-47c5-8601-b1334dcc296c" TextString="[Birthday]" Version="V3">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/gen-male-us-us.php" DesignTimeRectangle="973, 909, 355, 20" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl idx='4' isleaf='1' tag='DD' /&gt;" FuzzySelectorArgument="&lt;webctrl isleaf='1' tag='DD' /&gt;" Guid="554cb612-4787-42b5-ba0f-79c5ec420a98" ImageBase64="" InformativeScreenshot="4d604cb5ff62551456fdb5deca069358.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Fake*Generator*' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="788, 909, 170, 20" FullSelectorArgument="&lt;webctrl idx='6' tag='DT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DT' aaname='Birthday' check:innerText='Birthday' /&gt;" ImageBase64="" SearchSteps="FuzzySelector" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NGetText.Target>
+                            </uix:NGetText>
+                            <uix:NGetText DisplayName="Get Phone" sap:VirtualizedContainerService.HintSize="479,197" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="f6b4f190-f272-47c5-8601-b1334dcc296c" TextString="[Phone]" Version="V3">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/gen-male-us-us.php" DesignTimeRectangle="973, 812, 355, 20" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl idx='2' isleaf='1' tag='DD' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='DD' class='' /&gt;" Guid="51f3fd3a-1809-46d7-bd62-35da454f718e" InformativeScreenshot="f59182df706a3583c3c473ba4f724cbf.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Fake*Generator*' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="788, 812, 170, 20" FullSelectorArgument="&lt;webctrl idx='4' tag='DT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='DT' class='' aaname='Phone' check:innerText='Phone' /&gt;" SearchSteps="FuzzySelector" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NGetText.Target>
+                            </uix:NGetText>
+                            <uix:NGetText DisplayName="Get Country Code" sap:VirtualizedContainerService.HintSize="479,197" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="f6b4f190-f272-47c5-8601-b1334dcc296c" TextString="[CountryCode]" Version="V3">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/gen-male-us-us.php" DesignTimeRectangle="973, 837, 355, 20" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl idx='3' isleaf='1' tag='DD' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='DD' class='' /&gt;" Guid="f4642096-b43a-44b4-a8a8-97fddd588ca9" InformativeScreenshot="74d1efb94e49620a05a433c6fc0a8bab.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Fake*Generator*' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="788, 837, 170, 20" FullSelectorArgument="&lt;webctrl idx='5' tag='DT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='DT' class='' aaname='Country code' check:innerText='Country code' /&gt;" SearchSteps="FuzzySelector" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NGetText.Target>
+                            </uix:NGetText>
+                            <uix:NGetText DisplayName="Get Password" sap:VirtualizedContainerService.HintSize="479,197" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="f6b4f190-f272-47c5-8601-b1334dcc296c" TextString="[str_Password]" Version="V3">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/gen-male-us-us.php" DesignTimeRectangle="973, 798, 355, 20" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl idx='8' isleaf='1' tag='DD' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='DD' class='' /&gt;" Guid="344bf226-1611-49e7-aca3-331afab90284" InformativeScreenshot="59b6fbbb05d2abf19a7e91bdc1c69a1c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Fake*Generator*' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="788, 798, 170, 20" FullSelectorArgument="&lt;webctrl idx='11' tag='DT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='DT' class='' aaname='Password' check:innerText='Password' /&gt;" SearchSteps="FuzzySelector" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NGetText.Target>
+                            </uix:NGetText>
+                            <uix:NGetText DisplayName="Get Company" sap:VirtualizedContainerService.HintSize="479,197" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="f6b4f190-f272-47c5-8601-b1334dcc296c" TextString="[Company]" Version="V3">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/gen-male-us-us.php" DesignTimeRectangle="973, 662, 355, 20" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl idx='14' isleaf='1' tag='DD' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='DD' class='' /&gt;" Guid="5ee5a674-fa81-4177-a7ae-75dfcb09090d" InformativeScreenshot="b71db00e47f8f36383a1d54537e09150.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Fake*Generator*' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="788, 662, 170, 20" FullSelectorArgument="&lt;webctrl idx='17' tag='DT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='DT' class='' aaname='Company' check:innerText='Company' /&gt;" SearchSteps="FuzzySelector" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NGetText.Target>
+                            </uix:NGetText>
+                            <uix:NGetText DisplayName="Get Occupation" sap:VirtualizedContainerService.HintSize="479,197" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="f6b4f190-f272-47c5-8601-b1334dcc296c" TextString="[Occupation]" Version="V3">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/gen-male-us-us.php" DesignTimeRectangle="973, 807, 355, 20" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl idx='15' isleaf='1' tag='DD' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='DD' class='' /&gt;" Guid="a338f32f-0690-4e99-be25-1d2aa2fe082e" InformativeScreenshot="cbccf3f1b55796c064eea624c6ab02b1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Fake*Generator*' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="788, 807, 170, 20" FullSelectorArgument="&lt;webctrl idx='18' tag='DT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='DT' class='' aaname='Occupation' check:innerText='Occupation' /&gt;" SearchSteps="FuzzySelector" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NGetText.Target>
+                            </uix:NGetText>
+                            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;&quot;,Gender,Country,FullName.Split(&quot; &quot;c)(0),FullName.Split(&quot; &quot;c)(2),Birthday,Address,Phone,CountryCode,Company,Occupation,str_Password}]" DataTable="[dt_Result]" DisplayName="Add Data Row - Add row to result data table" sap:VirtualizedContainerService.HintSize="479,211" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
+                          </Sequence>
+                        </Sequence>
+                      </ActivityAction>
+                    </uix:NApplicationCard.Body>
+                    <uix:NApplicationCard.TargetApp>
+                      <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAB3RJTUUH3wUcFjkjSdtABwAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJZSURBVEhL7ZbNb9JwGMc9LEoLPynQMrPJyfuSGQ1/gHFuNKKXZdH9DR486nT/wLTiX2C8Gu+e1ADjxUWCQBkQylsBx4tTNFmKdr48oxf4tWsLk4ux+ZzK830+pf097e/UPmKmCi74hJgOYlo2em9MIAJBiGMNRwTwcxsxNWq2MOvh3Z6M25M2AZRBMUQgCHHMgQtEwlG+6vsajvRi8V7UNLH4t+1IeYmFuJ6gixjBQuVXb/+U5d9jHr9kOb+2DnFoMtwTFxQs9sxEAojwa+sQNxakV29NV5CZSDDWLdIQNILhxL0H/Mbmrha5jc3S/Yf5hcui1WnwkI8TZLe4VzPkzpmzCS2SFnvWYq9aXS39ZaojKD0OvCcoEWYKMR9VwElobTxoOoLioyfvTqMy6aiTTnEUONMknW0bjd19BbMC4dnz4MKlD4vejIrsRW9x0Vt1e+BtMfk/kA8OpHa73+58V9Pp9MW6sMTWVGMMmBXoH4eSxLM3S6o1Cvw1QYq9UZyqIH1CAZyRJUmTQ6n/40svt+KvECcQCC9evr7Gxlf8Oz6chM/PL18vnL/QtLkmf8i5Le7NjDU1mFiMnIUSCKphc8GgDXdTMCsoc4EkQTXR0XdRE7h29eUDZgUVLpAiKHgfDNeb4b/AkH9PAOO+q7WrqHFPeYKCfdVwvRlwQZVwFK4s778NdkPbnVAY6IbCnyPRyp27RdIB63243gwjApiUPUQX7e4kPR+j5yIDovRcgp7PO841jvlm6TMiAKBFC9HQq3aES6E+2N4q44rVG4ILFJS5x8BqTIGYP0HPVXjjInEIAAAAAElFTkSuQmCC" InformativeScreenshot="0baca03cdfd3e2881a7414fbb4ad4a4e.jpg" Selector="&lt;html app='chrome.exe' title='*Fake*Generator*' /&gt;" Title="Generate a Random Name - Fake Name Generator" Url="https://www.fakenamegenerator.com/" />
+                    </uix:NApplicationCard.TargetApp>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NApplicationCard>
+                </Sequence>
+              </ActivityAction>
+            </ui:ForEachRow.Body>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:ForEachRow>
+          <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[dt_Result]" DisplayName="Write Result Excel Sheet" sap:VirtualizedContainerService.HintSize="450,139" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="result.xlsx" />
+        </Sequence>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="516,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <Sequence sap:VirtualizedContainerService.HintSize="416,314" sap2010:WorkflowViewState.IdRef="Sequence_10">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message - Any Exception " sap:VirtualizedContainerService.HintSize="354,181" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[exception.Message+&quot; &quot;+DateTime.Now.ToString]" />
+              <Rethrow DisplayName="Rethrow - Exception" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="Rethrow_1" />
+            </Sequence>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+  </Sequence>
+</Activity>
